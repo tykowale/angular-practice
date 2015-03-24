@@ -1,6 +1,7 @@
 #Angular Presentation
 
 Angular and rails can go hand in hand for a project. Both of these are very special in that they require a lot of configuration to get started.So start off with build a new rails app and well make our configurations as we go.
+
 Rails does not manage front end dependencies and out Gemfile can only do so much. So before we move on lets install Bower. It was created by Twitter for exact reason, think of it as a Gemfile for your front end needs.
 
 ```
@@ -12,6 +13,12 @@ We will get back to Bower in a bit but first install our accompanying gem.
 
 ```
 gem 'bower-rails'
+```
+
+After this ```touch Bowerfile``` in your rails root director and add the following code for angular.
+
+```
+asset 'angular'
 ```
 
 Bundle install now, and you can see that bower now has a bunch of rake tasks. Run ```be rake bower:install``` to get a nice set of beginner tools to use with bower.
