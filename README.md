@@ -13,12 +13,14 @@ We will get back to Bower in a bit but first install our accompanying gem.
 
 ```
 gem 'bower-rails'
+gem 'angular-rails-templates'
 ```
 
 After this ```touch Bowerfile``` in your rails root director and add the following code for angular.
 
 ```
 asset 'angular'
+asset 'angular-route'
 ```
 
 Bundle install now, and you can see that bower now has a bunch of rake tasks. Run ```be rake bower:install``` to get a nice set of beginner tools to use with bower.
@@ -37,6 +39,8 @@ We're getting close to the finish line! Add the following lines to your applicat
 application.js
 
 //= require angular/angular
+//= require angular-route/angular-route
+//= require angular-rails-templates
 ```
 
 Congrats! You just finished the set up and we should be ready to start creating angular magic!
