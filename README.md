@@ -37,11 +37,6 @@ We're getting close to the finish line! Add the following lines to your applicat
 application.js
 
 //= require angular/angular
----------------------------
-application.css
-
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 ```
 
 Congrats! You just finished the set up and we should be ready to start creating angular magic!
